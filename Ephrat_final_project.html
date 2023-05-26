@@ -1,0 +1,146 @@
+<!--Name: Ephrat N 
+    Date: December 19/2021
+    Purpose:Cross Course Project| INFO 1272 | INFO 1252
+    Picture Citation: pictures taken from Gymshark and Women's fitness web page. 
+    this site is for educational purposes.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ephrat N Belaineh">
+    <meta name="description" content="INFO1252/INFO1272 Final Cross course project">
+    <meta name="keywords" content="HTML, CSS, JS ">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src= "main.js" async></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200&family=Parisienne&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Evolvelove</title>
+   
+</head>
+<body onload ="pageloader();">
+    <div class="wrapper">
+        <header>
+            <div class="logo-container">
+                <h1>Evolovelove</h1>
+                <p id='dateTime' class="date_time">Currency | View Cart</p>
+            </div>
+            
+            <select id="currencySelector" onchange="change_currnecy();">
+                <option selected value="CAD">CAD</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+            </select>
+            <!-- main navbar  -->
+            <nav class="navbar">
+                
+                <ul>
+                    <li><a href="#">Womens</a></li>
+                    <li><a href="#">Mens</a></li>
+                </ul>
+            </nav>
+            
+            <div class="banner">
+                <img src="images/EvolveloveBanneeer.jpg" alt="banner ">
+            </div>
+        </header>
+        
+        <!---- mid navbar-->
+
+        <nav class="navbar">
+            <select id="category" class="box" onchange="display_store_items();">
+                <option>Sports Bra</option>
+                <option>Leggings</option>
+                <option>Crop Top</option>
+            </select>  
+        </nav>
+   
+            
+       <!---- dynamic store itme containers-->
+
+        <div class="cards" id="main">
+            <div class="card" id="article">
+                <div id="mydiv">
+
+                </div>
+            </div>
+        </div>
+        
+        
+         <!--div for product detail -->
+        <div id="cartdiv">
+        </div>
+
+        <!--div for product image-->
+        <div id="imgdiv">
+            
+        </div>
+        
+
+        <div class="cart_output" id="whats_in_ur_cart">
+            <h2>Whats in your cart? </h2>
+            <strong>| Product ID | Price | Quantity | Subtotal |</strong></span>
+            <br/>
+
+            <div id="cartOutput"></div></br>
+
+            <div id ="subtotal"></div>
+            
+            
+            <strong>Submit a Review</strong></legend>
+            <p>Product ID: <input type="text" id="reviewId" /> <span id="reviewvalidate"></span></p>
+            <p>Review: <input type="text" id="reviewinput" size="20"/></p>
+            <p><input type="button" class="button" value="Submit Review" onclick="review();"/></p>
+            </div>
+            <hr>
+      
+        
+            <legend><strong>Evolevelove</strong></legend>
+            <div>
+                <p>
+                    Product ID: <input type="text" id="pro_id" />
+                </p>
+                <p>
+                    Quantity: <input type="number" id="qty" />
+                    <span id="cartvalidate"></span>
+                </p>
+                <p>
+                    <input type="button" class="button" value="Item Details" onclick="display_detail();" />
+                    <input type="button" class="button" value="Add to cart" onclick="addToCart();" />
+                    <input type="button" class="button" value="Remove from cart" onclick="remove_cart();" />
+                </p>
+            </div>
+            </div>
+     
+        
+
+		<footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="http://facebook.com"><i class="fa fa-facebook"></i></a>
+				<a href="http:twitter.com"><i class="fa fa-twitter"></i></a>
+				<a href="http://instagram.com"><i class="fa fa-instagram"></i></a>
+
+			</div>
+
+			<div class="footer-left">
+
+				
+                <a href="mailto:e_belaineh@fanshawe.ca">e_belaineh@fanshawe.ca</a>
+				<p>Evolvelove 2021</p>
+                <p>Cross Course Project| INFO 1272 | INFO 1252 </p>
+			</div>
+
+		</footer>
+
+    </div>
+</body>
+</html>
+

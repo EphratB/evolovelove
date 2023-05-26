@@ -1,0 +1,310 @@
+/* Css for Cross Course Project / Evolvelove */
+
+
+
+.wrapper{
+  margin:auto;
+}
+.date_time{
+  text-align: right;
+}
+.logo-container h1{
+  align-items:end;
+  position:absolute;
+  margin-top:8px;
+ 
+}
+#currencySelector{
+  float:right;
+}
+p{
+    color:rgb(90, 89, 89);
+    text-align:left;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 14px;
+    padding:5px;
+    margin-left:5px;;
+}
+h1{
+  font-family: 'Josefin Slab', serif;
+  font-family: 'Parisienne', cursive;
+  font-family: 'Tangerine', cursive;
+  font-size: 70px;
+  color:rgb(90, 89, 89);
+  font-weight:bolder;
+}
+h3{
+  font-weight:bold;
+  font-size: 16px;
+  color:#5a5a5a;
+  text-align:left;
+  font-family:roboto;
+  margin-left:10px;
+}
+h2{
+  font-weight:bold;
+  font-size: 20px;
+  color:#5a5a5a;
+  text-align:left;
+  font-family:roboto;
+  margin-left:10px;
+
+}
+/* banner pic */
+
+
+.banner img{
+  max-width: 100%;
+}
+
+
+/* nav bar for both top and mid */
+
+.navbar{
+  background-color:#EF996A;
+  clear:both;
+}
+.navbar ul{
+  display:flex;
+  justify-content:center;
+  
+}
+.navbar li{
+  list-style:none;
+  margin:15px;
+}
+.navbar a{
+  color: #FFFFFF;
+  text-decoration:none;
+  font-size:18px;
+}
+
+/*  navbar a */
+a:link{
+  color:#FFFFFF;
+
+}
+
+a:hover{
+  color:#f8dece;
+
+}
+
+
+/*  flex box for displaying the pics*/
+
+.cards{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items: stretch;
+
+  
+}
+.card{
+  flex: 1 0 150px;
+  margin:5px;
+  border:1px solid #CCCCCC;
+  border-radius:2px;
+  box-shadow:1px 1px #CCCCCC;
+  flex-grow: 1;
+
+}
+
+
+.card img{
+  max-width:100%;
+
+} 
+.ruler{
+  color:#f1722d;
+  font-weight:500;
+}
+
+/* buttons*/
+
+
+.button{
+  background-color:#EF996A;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  align-content: flex-end;
+  
+}
+/* drop down meny */
+
+.box {
+  width: 150px;
+  height: 30px;
+  border: 1px solid #EF996A;
+  font-size:16px;
+  color:#FFFFFF;
+  background-color:#EF996A;
+  font-family: sans-serif;
+ 
+}
+
+
+  /* output div's */
+  
+  #cartdiv{
+    float:right;
+  }
+
+  #cartdiv h3{
+    color:#5a5a5a;
+    font-family:'Times New Roman', Times, serif;
+    font-size:20px;
+    
+  }
+  #imgdiv img{
+    width:190px;
+    float:right;
+    margin-right: 5px;
+    border:solid 1px #cccccc;
+    border-radius: 2px;
+    text-align:left;
+    padding:5px;
+    margin-left:5px;
+   
+  }
+  
+
+/* footer */
+  
+  
+ .footer-distributed {
+  background-color:rgb(255, 245, 228);
+  height:100px;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #EF996A;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+}
+footer a:link{
+  color:#8f9296; 
+  
+}
+footer a:hover{
+  color:#f8dece;
+  
+}
+/* css for validation */
+
+#reviewvalidate{
+  color:red;
+}
+#cartvalidate{
+  color:red;
+}
+
+ /* media for screen >= 556px */
+ @media screen and (min-width:576px) {
+
+  .cards{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: stretch;
+    
+  }
+  .card{
+    flex: 1 0 30%;
+    margin:3px;
+    border:1px solid #ccc;
+    border-radius:5px;
+  
+  }
+
+ p{
+  color:rgb(90, 89, 89);
+  text-align:left;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 15px;
+  padding:5px;
+  margin-left:5px;;
+ }
+ h3{
+  font-weight:bold;
+  font-size: 16px;
+  color:#5a5a5a;
+  text-align:left;
+  font-family:roboto;
+  margin-left:10px;
+ }
+ h2{
+  font-weight:bold;
+  font-size: 22px;
+  color:#5a5a5a;
+  text-align:left;
+  font-family:roboto;
+  margin-left:10px;
+
+}
+
+}
+  /* media query for device screen 768 till wrapper */
+@media screen and (min-width:768px) { 
+  .wrapper{
+    max-width:1200px;
+  }
+
+  .cards{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: stretch;
+    justify-content:space-between;
+    justify-content: center;
+    
+   
+  }
+  .card{
+    flex: 1 0 240px;
+    border:1px solid #ccc;
+    border-radius:5px;
+  
+  }
+  .card {
+    color:#343434;
+    text-align:left;
+    font-family:roboto;
+    font-weight:100;
+  }
+  
+
+
+}
+
+  
